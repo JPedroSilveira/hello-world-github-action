@@ -12,3 +12,12 @@ jobs:
         with:
           who-to-greet: "World"
       - run: echo "Time = ${{ steps.hello.outputs.time }}"
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello-world
+        id: hello
+        with:
+          who-to-greet: "error"
+      - run: echo "Time = ${{ steps.hello.outputs.time }}"
