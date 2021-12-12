@@ -2,7 +2,7 @@ name: Hello World
 author: João Pedro Silveira
 description: Say hello to the world!
 inputs:
-  who-to-great:
+  who-to-greet:
     description: Write the name of someone
     required: true
     default: World

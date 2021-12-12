@@ -10,5 +10,5 @@ jobs:
       - uses: ./.github/actions/hello-world
         id: hello
         with:
-          who-to-great: "World"
-      - run: echo "Time = ${{ steps.hello.outputs.time }}""
+          who-to-greet: "World"
+      - run: echo "Time = ${{ steps.hello.outputs.time }}"
