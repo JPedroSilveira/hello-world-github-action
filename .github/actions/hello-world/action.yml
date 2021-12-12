@@ -1,0 +1,14 @@
+name: Hello World
+author: João Pedro Silveira
+description: Say hello to the world!
+inputs:
+  who-to-great:
+    description: Write the name of someone
+    required: true
+    default: World
+outputs:
+  time:
+    description: "The greeting time"
+runs:
+  using: "node16"
+  main: "dist/index.js"

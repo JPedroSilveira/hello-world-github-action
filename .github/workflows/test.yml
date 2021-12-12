@@ -1,0 +1,12 @@
+name: Test
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello-world
+        id: hello
+        with:
+          who-to-great: "World"
+      - run: echo "Time = ${{ steps.hello.outputs.time }}""
